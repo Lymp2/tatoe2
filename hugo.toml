@@ -1,0 +1,37 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'TATOE - Art Trail Management'
+theme = 'PaperMod'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "organizer-guide"
+    name = "Organizer Guide"
+    url = "/manual/owner_admin/"
+    weight = 2
+  [[menu.main]]
+    identifier = "participant-guide"
+    name = "Participant Guide"
+    url = "/manual/participant/"
+    weight = 3
+  [[menu.main]]
+    identifier = "displays"
+    name = "Displays"
+    url = "/displays/"
+    weight = 4
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
