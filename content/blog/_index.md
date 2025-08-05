@@ -1,6 +1,6 @@
 ---
 title: "TATOE Blog"
-date: 2025-01-27
+date: 2025-08-01
 draft: false
 ---
 

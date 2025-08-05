@@ -9,6 +9,8 @@ draft: false
 Welcome to **TATOE**, a web application for organising and participating in art trails.
 
 
+
+<h2 class="acronym-highlight">This website is under development</h2>
 <h2 class="acronym-highlight">Who I am</h2>
 
 I'm Steve Lympany, and I live in the south east of England. I'm a retired engineer and now doing a bit of art. I also write software as a hobby. I wrote TATOE to help my local art club. I don't expect to make tons of dosh from it, but I would like to cover my web hosting costs. There is a Ko-fi button floating around on this page somewhere - "buy me a coffee" (shown as lympany.art - my other website). I hope your donations help cover my hosting/database costs.

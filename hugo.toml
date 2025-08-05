@@ -3,6 +3,11 @@ languageCode = 'en-us'
 title = 'TATOE - Art Trail Management'
 theme = 'PaperMod'
 
+[params]
+  [params.label]
+    icon = "images/logo.jpg"
+    iconHeight = 40
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

@@ -12,23 +12,23 @@ Here you'll find screenshots and descriptions of the key features and interfaces
 
 <h3 class="acronym-highlight">1. Dashboard Overview</h3>
 <div class="display-image-container">
-    <img src="/images/displays/s1.png" alt="Organiser Dashboard" class="display-image" onclick="openImageModal(this)">
+    <img src="/images/displays/s1.jpg" alt="Organiser Dashboard" class="display-image" onclick="openImageModal(this)">
 </div>
 **Description**: The main dashboard shows an overview of the art trail with key metrics including total participants, registered users, pending invitations, and venue assignments. Administrators can quickly see the status of their event at a glance.
 
 <h3 class="acronym-highlight">2. Participant Management</h3>
 <div class="display-image-container">
-    <img src="/images/displays/s2.png" alt="Participant Management" class="display-image" onclick="openImageModal(this)">
+    <img src="/images/displays/s2.jpg" alt="Participant Management" class="display-image" onclick="openImageModal(this)">
 </div>
 **Description**: This interface allows organisers to view all participants, filter by status (registered, pending, blocked), and perform actions like blocking/unblocking users or sending direct emails.
 
 <h3 class="acronym-highlight">3. CSV Import Interface</h3>
 <div class="display-image-container">
-    <img src="/images/displays/s3.png" alt="CSV Import" class="display-image" onclick="openImageModal(this)">
+    <img src="/images/displays/s3.jpg" alt="CSV Import" class="display-image" onclick="openImageModal(this)">
 </div>
 **Description**: Simple drag-and-drop interface for importing participant lists from CSV files. The system automatically sends invitation emails to all imported participants.
 
-<h3 class="acronym-highlight">4. Venue Lead Overview</h3>
+<!-- <h3 class="acronym-highlight">4. Venue Lead Overview</h3>
 <div class="display-image-container">
     <img src="/images/displays/venue-management.png" alt="Venue Management" class="display-image" onclick="openImageModal(this)">
 </div>
@@ -56,9 +56,9 @@ Here you'll find screenshots and descriptions of the key features and interfaces
 <div class="display-image-container">
     <img src="/images/displays/project-settings.png" alt="Project Settings" class="display-image" onclick="openImageModal(this)">
 </div>
-**Description**: Configure art trail details, set event dates, manage administrators, and control system-wide settings.
+**Description**: Configure art trail details, set event dates, manage administrators, and control system-wide settings. -->
 
-<h2 class="acronym-highlight">Participant Portal Screenshots</h2>
+<!-- <h2 class="acronym-highlight">Participant Portal Screenshots</h2>
 
 <h3 class="acronym-highlight">9. Participant Dashboard</h3>
 <div class="display-image-container">
@@ -130,7 +130,7 @@ Here you'll find screenshots and descriptions of the key features and interfaces
 <div class="display-image-container">
     <img src="/images/displays/system-status.png" alt="System Status" class="display-image" onclick="openImageModal(this)">
 </div>
-**Description**: Real-time system status indicators showing server health, maintenance schedules, and any current issues.
+**Description**: Real-time system status indicators showing server health, maintenance schedules, and any current issues. -->
 
 ---
 
