@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Libby on TATOE - Art Trail Management</title>
+    <link>http://localhost:1313/libby/</link>
+    <description>Recent content in Libby on TATOE - Art Trail Management</description>
+    <generator>Hugo -- 0.146.7</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/libby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Libby - Page 1</title>
+      <link>http://localhost:1313/libby/page1/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libby/page1/</guid>
+      <description>&lt;h1 id=&#34;page-1&#34;&gt;Page 1&lt;/h1&gt;
+&lt;p&gt;This is the first private page in the Libby section.&lt;/p&gt;
+&lt;h2 id=&#34;content&#34;&gt;Content&lt;/h2&gt;
+&lt;p&gt;You can put any content here that you want to share with specific people via direct links.&lt;/p&gt;
+&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Private&lt;/strong&gt;: Not listed in navigation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessible&lt;/strong&gt;: Via direct URL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secure&lt;/strong&gt;: Only people with the link can find it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-content&#34;&gt;Example Content&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Libby - Page 2</title>
+      <link>http://localhost:1313/libby/page2/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libby/page2/</guid>
+      <description>&lt;h1 id=&#34;page-2&#34;&gt;Page 2&lt;/h1&gt;
+&lt;p&gt;This is the second private page in the Libby section.&lt;/p&gt;
+&lt;h2 id=&#34;private-information&#34;&gt;Private Information&lt;/h2&gt;
+&lt;p&gt;This page can contain any private information you want to share with specific people.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases&#34;&gt;Use Cases&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Private documentation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internal notes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Draft content&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Personal resources&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Confidential information&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;security-notes&#34;&gt;Security Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Pages are not indexed by search engines&lt;/li&gt;
+&lt;li&gt;Not listed in site navigation&lt;/li&gt;
+&lt;li&gt;Only accessible via direct links&lt;/li&gt;
+&lt;li&gt;Can be password protected at the hosting level if needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/libby/&#34;&gt;← Back to Libby&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Libby - Page 3</title>
+      <link>http://localhost:1313/libby/page3/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libby/page3/</guid>
+      <description>&lt;h1 id=&#34;page-3&#34;&gt;Page 3&lt;/h1&gt;
+&lt;p&gt;This is the third private page in the Libby section.&lt;/p&gt;
+&lt;h2 id=&#34;additional-features&#34;&gt;Additional Features&lt;/h2&gt;
+&lt;p&gt;You can customize these pages with any content you need.&lt;/p&gt;
+&lt;h3 id=&#34;content-types&#34;&gt;Content Types&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Text content&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Images&lt;/strong&gt; (upload to static/images/)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Links to external resources&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embedded content&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Downloadable files&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-structure&#34;&gt;Example Structure&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;content/libby/
+├── _index.md          # Main Libby page
+├── page1.md           # Private page 1
+├── page2.md           # Private page 2
+├── page3.md           # Private page 3
+├── notes.md           # Private notes
+└── resources.md       # Private resources
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;url-structure&#34;&gt;URL Structure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Main page: &lt;code&gt;https://tatoe.co.uk/libby/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Page 1: &lt;code&gt;https://tatoe.co.uk/libby/page1/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Page 2: &lt;code&gt;https://tatoe.co.uk/libby/page2/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Page 3: &lt;code&gt;https://tatoe.co.uk/libby/page3/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/libby/&#34;&gt;← Back to Libby&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Libby - Private Notes</title>
+      <link>http://localhost:1313/libby/notes/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libby/notes/</guid>
+      <description>&lt;h1 id=&#34;private-notes&#34;&gt;Private Notes&lt;/h1&gt;
+&lt;p&gt;This is a private notes page for your personal use.&lt;/p&gt;
+&lt;h2 id=&#34;quick-notes&#34;&gt;Quick Notes&lt;/h2&gt;
+&lt;p&gt;You can use this page to store:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meeting notes&lt;/li&gt;
+&lt;li&gt;Ideas and concepts&lt;/li&gt;
+&lt;li&gt;Personal reminders&lt;/li&gt;
+&lt;li&gt;Draft content&lt;/li&gt;
+&lt;li&gt;Private thoughts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;formatting-examples&#34;&gt;Formatting Examples&lt;/h2&gt;
+&lt;h3 id=&#34;lists&#34;&gt;Lists&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bullet points&lt;/li&gt;
+&lt;li&gt;Numbered lists&lt;/li&gt;
+&lt;li&gt;Nested items&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bold text&lt;/strong&gt; and &lt;em&gt;italic text&lt;/em&gt; for emphasis.&lt;/p&gt;
+&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Example code block
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, Libby!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://example.com&#34;&gt;Link to external site&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/libby/&#34;&gt;← Back to Libby&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Libby - Private Resources</title>
+      <link>http://localhost:1313/libby/resources/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libby/resources/</guid>
+      <description>&lt;h1 id=&#34;private-resources&#34;&gt;Private Resources&lt;/h1&gt;
+&lt;p&gt;This page contains private resources and links.&lt;/p&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;h3 id=&#34;documentation&#34;&gt;Documentation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/documentation/&#34;&gt;Hugo Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;&gt;PaperMod Theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;Markdown Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;file-uploads&#34;&gt;File Uploads&lt;/h2&gt;
+&lt;p&gt;To add files to this section:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Upload files to &lt;code&gt;static/files/&lt;/code&gt; directory&lt;/li&gt;
+&lt;li&gt;Link to them like this: &lt;a href=&#34;http://localhost:1313/files/filename.pdf&#34;&gt;Download File&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+&lt;p&gt;To add images:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Upload to &lt;code&gt;static/images/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reference them: &lt;img alt=&#34;Alt text&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/filename.jpg&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;external-resources&#34;&gt;External Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://netlify.com&#34;&gt;Netlify&lt;/a&gt; - Hosting platform&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com&#34;&gt;GitHub&lt;/a&gt; - Code repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/libby/&#34;&gt;← Back to Libby&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

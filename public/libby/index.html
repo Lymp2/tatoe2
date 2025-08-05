@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Libby | TATOE - Art Trail Management</title>
+<meta name="keywords" content="">
+<meta name="description" content="LibbyHDC - Electoral Register Management System
+Overview
+LibbyHDC is a Flutter-based desktop application for managing electoral register data. It provides tools for importing, filtering, and analyzing council electoral data with support for duplicate detection and address management.
+Features
+Core Functionality
+
+CSV Import: Import electoral register data from CSV files
+Database Management: Create, save, load, and update electoral databases
+Advanced Filtering: Search people by name, electoral number, or address with support for AND/OR logic
+Duplicate Detection: Automatic identification and management of duplicate entries
+Address Management: Track address history and current locations
+Excel Export: Export filtered results to Excel format
+Multi-Database Support: Switch between main database and duplicate databases
+
+Search Capabilities
+
+Simple Search: Basic text search across names and electoral numbers
+Advanced Logic:
+
+Use ^ for AND logic (must contain all terms)
+Use ¦ for OR logic (must contain at least one term)
+
+
+Address Filtering: Filter by postcode and street information
+
+Installation
+Prerequisites
+
+Flutter SDK (version 3.8.1 or higher)
+Dart SDK
+Git
+
+Setup Instructions
+
+
+Clone the repository">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/libby/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/libby/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/libby/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="TATOE - Art Trail Management (Alt + H)">
+                <img src="http://localhost:1313/images/logo.jpg" alt="" aria-label="logo"
+                    height="40">TATOE - Art Trail Management</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/manual/owner_admin/" title="Organizer Guide">
+                    <span>Organizer Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/manual/participant/" title="Participant Guide">
+                    <span>Participant Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/displays/" title="Displays">
+                    <span>Displays</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Libby
+  </h1>
+</header>
+<div class="post-content"><h1 id="libbyhdc---electoral-register-management-system">LibbyHDC - Electoral Register Management System<a hidden class="anchor" aria-hidden="true" href="#libbyhdc---electoral-register-management-system">#</a></h1>
+<h2 id="overview">Overview<a hidden class="anchor" aria-hidden="true" href="#overview">#</a></h2>
+<p>LibbyHDC is a Flutter-based desktop application for managing electoral register data. It provides tools for importing, filtering, and analyzing council electoral data with support for duplicate detection and address management.</p>
+<h2 id="features">Features<a hidden class="anchor" aria-hidden="true" href="#features">#</a></h2>
+<h3 id="core-functionality">Core Functionality<a hidden class="anchor" aria-hidden="true" href="#core-functionality">#</a></h3>
+<ul>
+<li><strong>CSV Import</strong>: Import electoral register data from CSV files</li>
+<li><strong>Database Management</strong>: Create, save, load, and update electoral databases</li>
+<li><strong>Advanced Filtering</strong>: Search people by name, electoral number, or address with support for AND/OR logic</li>
+<li><strong>Duplicate Detection</strong>: Automatic identification and management of duplicate entries</li>
+<li><strong>Address Management</strong>: Track address history and current locations</li>
+<li><strong>Excel Export</strong>: Export filtered results to Excel format</li>
+<li><strong>Multi-Database Support</strong>: Switch between main database and duplicate databases</li>
+</ul>
+<h3 id="search-capabilities">Search Capabilities<a hidden class="anchor" aria-hidden="true" href="#search-capabilities">#</a></h3>
+<ul>
+<li><strong>Simple Search</strong>: Basic text search across names and electoral numbers</li>
+<li><strong>Advanced Logic</strong>:
+<ul>
+<li>Use <code>^</code> for AND logic (must contain all terms)</li>
+<li>Use <code>¦</code> for OR logic (must contain at least one term)</li>
+</ul>
+</li>
+<li><strong>Address Filtering</strong>: Filter by postcode and street information</li>
+</ul>
+<h2 id="installation">Installation<a hidden class="anchor" aria-hidden="true" href="#installation">#</a></h2>
+<h3 id="prerequisites">Prerequisites<a hidden class="anchor" aria-hidden="true" href="#prerequisites">#</a></h3>
+<ul>
+<li>Flutter SDK (version 3.8.1 or higher)</li>
+<li>Dart SDK</li>
+<li>Git</li>
+</ul>
+<h3 id="setup-instructions">Setup Instructions<a hidden class="anchor" aria-hidden="true" href="#setup-instructions">#</a></h3>
+<ol>
+<li>
+<p><strong>Clone the repository</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone &lt;repository-url&gt;
+</span></span><span style="display:flex;"><span>cd libby_hdc
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Install dependencies</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>flutter pub get
+</span></span><span style="display:flex;"><span>cd libby_shared
+</span></span><span style="display:flex;"><span>flutter pub get
+</span></span><span style="display:flex;"><span>cd ..
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Run the application</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>flutter run -d windows  <span style="color:#75715e"># For Windows</span>
+</span></span><span style="display:flex;"><span>flutter run -d macos    <span style="color:#75715e"># For macOS</span>
+</span></span><span style="display:flex;"><span>flutter run -d linux    <span style="color:#75715e"># For Linux</span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="user-interface">User Interface<a hidden class="anchor" aria-hidden="true" href="#user-interface">#</a></h2>
+<h3 id="main-window-layout">Main Window Layout<a hidden class="anchor" aria-hidden="true" href="#main-window-layout">#</a></h3>
+<p>The application consists of several key areas:</p>
+<ol>
+<li><strong>Top Bar</strong>: Database selector dropdown and export button</li>
+<li><strong>Search Field</strong>: Text input for filtering people</li>
+<li><strong>Main Content</strong>: Split view with people list on the left and address details on the right</li>
+<li><strong>Status Bar</strong>: Shows selected person information at the bottom</li>
+</ol>
+<h3 id="database-selector">Database Selector<a hidden class="anchor" aria-hidden="true" href="#database-selector">#</a></h3>
+<p>Choose between three database views:</p>
+<ul>
+<li><strong>Main DB</strong>: Primary electoral register data</li>
+<li><strong>Duplicates 1</strong>: First set of duplicate entries</li>
+<li><strong>Duplicates 2</strong>: Second set of duplicate entries</li>
+</ul>
+<h2 id="usage-guide">Usage Guide<a hidden class="anchor" aria-hidden="true" href="#usage-guide">#</a></h2>
+<h3 id="getting-started">Getting Started<a hidden class="anchor" aria-hidden="true" href="#getting-started">#</a></h3>
+<ol>
+<li>
+<p><strong>Create a New Database</strong></p>
+<ul>
+<li>Click the menu button (⋮) in the top-right corner</li>
+<li>Select &ldquo;Create DB&rdquo;</li>
+<li>Choose a CSV file containing electoral register data</li>
+<li>The system will process the file and create the database</li>
+</ul>
+</li>
+<li>
+<p><strong>Load Existing Database</strong></p>
+<ul>
+<li>Click the menu button</li>
+<li>Select &ldquo;Open DB&rdquo;</li>
+<li>The system will load the previously saved database</li>
+</ul>
+</li>
+</ol>
+<h3 id="working-with-data">Working with Data<a hidden class="anchor" aria-hidden="true" href="#working-with-data">#</a></h3>
+<h4 id="searching-and-filtering">Searching and Filtering<a hidden class="anchor" aria-hidden="true" href="#searching-and-filtering">#</a></h4>
+<ol>
+<li>
+<p><strong>Basic Search</strong></p>
+<ul>
+<li>Type in the search field to filter people by name, electoral number, or address</li>
+<li>Results update automatically as you type</li>
+</ul>
+</li>
+<li>
+<p><strong>Advanced Search</strong></p>
+<ul>
+<li>Use <code>^</code> between terms for AND logic: <code>smith^john</code> finds people with both &ldquo;smith&rdquo; AND &ldquo;john&rdquo;</li>
+<li>Use <code>¦</code> between terms for OR logic: <code>smith¦john</code> finds people with either &ldquo;smith&rdquo; OR &ldquo;john&rdquo;</li>
+</ul>
+</li>
+<li>
+<p><strong>Address Filtering</strong></p>
+<ul>
+<li>Click on a person to see their address details in the right panel</li>
+<li>The address panel shows all people at that location</li>
+</ul>
+</li>
+</ol>
+<h4 id="database-operations">Database Operations<a hidden class="anchor" aria-hidden="true" href="#database-operations">#</a></h4>
+<ol>
+<li>
+<p><strong>Save Database</strong></p>
+<ul>
+<li>Click menu → &ldquo;Save DB&rdquo; to save current data to JSON format</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Database</strong></p>
+<ul>
+<li>Place CSV update files in the <code>council/updates</code> folder</li>
+<li>Click menu → &ldquo;Update DB&rdquo; to process updates</li>
+<li>Updates will add new entries, modify existing ones, or mark deletions</li>
+</ul>
+</li>
+<li>
+<p><strong>Delete Database</strong></p>
+<ul>
+<li>Click menu → &ldquo;Delete DB&rdquo; to clear all data</li>
+</ul>
+</li>
+</ol>
+<h4 id="exporting-data">Exporting Data<a hidden class="anchor" aria-hidden="true" href="#exporting-data">#</a></h4>
+<ol>
+<li><strong>Export to Excel</strong>
+<ul>
+<li>Filter the data as needed</li>
+<li>Click the export button (📥) in the top-right corner</li>
+<li>The file will be saved as <code>filtered_export.xlsx</code> in the base directory</li>
+</ul>
+</li>
+</ol>
+<h3 id="understanding-the-interface">Understanding the Interface<a hidden class="anchor" aria-hidden="true" href="#understanding-the-interface">#</a></h3>
+<h4 id="people-list-left-panel">People List (Left Panel)<a hidden class="anchor" aria-hidden="true" href="#people-list-left-panel">#</a></h4>
+<ul>
+<li>Shows filtered list of people</li>
+<li>Each entry displays: First Name, Middle Initial, Last Name, Person Key, Electoral Number</li>
+<li>Click on a person to select them and view details</li>
+</ul>
+<h4 id="address-details-right-panel">Address Details (Right Panel)<a hidden class="anchor" aria-hidden="true" href="#address-details-right-panel">#</a></h4>
+<ul>
+<li>Shows all people at the selected address</li>
+<li>Displays move-in dates and address history</li>
+<li>Click on any person to select them and filter the main list</li>
+</ul>
+<h4 id="selected-person-display">Selected Person Display<a hidden class="anchor" aria-hidden="true" href="#selected-person-display">#</a></h4>
+<ul>
+<li>Bottom panel shows currently selected person</li>
+<li>Displays name and electoral number</li>
+</ul>
+<h3 id="data-structure">Data Structure<a hidden class="anchor" aria-hidden="true" href="#data-structure">#</a></h3>
+<p>The system manages several types of data:</p>
+<h4 id="person-records">Person Records<a hidden class="anchor" aria-hidden="true" href="#person-records">#</a></h4>
+<ul>
+<li><strong>Name</strong>: First name, middle initial, last name</li>
+<li><strong>Electoral Number</strong>: Unique identifier</li>
+<li><strong>Address History</strong>: List of all addresses with dates</li>
+<li><strong>Name History</strong>: Previous names if changed</li>
+</ul>
+<h4 id="address-records">Address Records<a hidden class="anchor" aria-hidden="true" href="#address-records">#</a></h4>
+<ul>
+<li><strong>Postcode</strong>: Postal code</li>
+<li><strong>Street Details</strong>: Full address information</li>
+<li><strong>Residents</strong>: List of people currently at this address</li>
+</ul>
+<h4 id="duplicate-management">Duplicate Management<a hidden class="anchor" aria-hidden="true" href="#duplicate-management">#</a></h4>
+<ul>
+<li><strong>Main Database</strong>: Primary electoral register</li>
+<li><strong>Duplicates 1</strong>: First set of potential duplicates</li>
+<li><strong>Duplicates 2</strong>: Second set of potential duplicates</li>
+</ul>
+<h2 id="file-structure">File Structure<a hidden class="anchor" aria-hidden="true" href="#file-structure">#</a></h2>
+<h3 id="input-files">Input Files<a hidden class="anchor" aria-hidden="true" href="#input-files">#</a></h3>
+<ul>
+<li><strong>CSV Files</strong>: Electoral register data in CSV format</li>
+<li><strong>Update Files</strong>: CSV files placed in <code>council/updates</code> folder for incremental updates</li>
+</ul>
+<h3 id="output-files">Output Files<a hidden class="anchor" aria-hidden="true" href="#output-files">#</a></h3>
+<ul>
+<li><strong>Database</strong>: <code>council/councilDB.json</code> - Main database file</li>
+<li><strong>Export</strong>: <code>filtered_export.xlsx</code> - Excel export of filtered data</li>
+<li><strong>Errors</strong>: <code>libby_councilerrors.csv</code> - Error log from update processing</li>
+</ul>
+<h3 id="directory-structure">Directory Structure<a hidden class="anchor" aria-hidden="true" href="#directory-structure">#</a></h3>
+<pre tabindex="0"><code>libby_hdc/
+├── lib/                    # Main application code
+├── libby_shared/          # Shared library code
+├── council/               # Data directory
+│   ├── councilDB.json    # Database file
+│   └── updates/          # Update files folder
+└── filtered_export.xlsx  # Export file
+</code></pre><h2 id="error-handling">Error Handling<a hidden class="anchor" aria-hidden="true" href="#error-handling">#</a></h2>
+<h3 id="common-issues">Common Issues<a hidden class="anchor" aria-hidden="true" href="#common-issues">#</a></h3>
+<ol>
+<li>
+<p><strong>File Not Found</strong></p>
+<ul>
+<li>Ensure CSV files are in the correct format</li>
+<li>Check file permissions</li>
+</ul>
+</li>
+<li>
+<p><strong>Database Loading Errors</strong></p>
+<ul>
+<li>Verify the database file exists</li>
+<li>Check file integrity</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Processing Errors</strong></p>
+<ul>
+<li>Review error log in <code>libby_councilerrors.csv</code></li>
+<li>Check CSV format matches expected structure</li>
+</ul>
+</li>
+</ol>
+<h3 id="error-log">Error Log<a hidden class="anchor" aria-hidden="true" href="#error-log">#</a></h3>
+<p>The system generates detailed error logs during update processing:</p>
+<ul>
+<li><strong>ErrorType</strong>: Type of error encountered</li>
+<li><strong>PersonExists</strong>: Whether the person already exists in main database</li>
+<li><strong>Full Record</strong>: Complete CSV row for debugging</li>
+</ul>
+<h2 id="advanced-features">Advanced Features<a hidden class="anchor" aria-hidden="true" href="#advanced-features">#</a></h2>
+<h3 id="duplicate-detection">Duplicate Detection<a hidden class="anchor" aria-hidden="true" href="#duplicate-detection">#</a></h3>
+<p>The system automatically identifies potential duplicates based on:</p>
+<ul>
+<li>Similar names</li>
+<li>Same electoral numbers</li>
+<li>Address conflicts</li>
+</ul>
+<h3 id="address-history-tracking">Address History Tracking<a hidden class="anchor" aria-hidden="true" href="#address-history-tracking">#</a></h3>
+<ul>
+<li>Tracks all address changes with dates</li>
+<li>Shows move-in dates for current addresses</li>
+<li>Maintains historical address information</li>
+</ul>
+<h3 id="data-validation">Data Validation<a hidden class="anchor" aria-hidden="true" href="#data-validation">#</a></h3>
+<ul>
+<li>Validates CSV format during import</li>
+<li>Checks for required fields</li>
+<li>Ensures data consistency</li>
+</ul>
+<h2 id="technical-details">Technical Details<a hidden class="anchor" aria-hidden="true" href="#technical-details">#</a></h2>
+<h3 id="supported-platforms">Supported Platforms<a hidden class="anchor" aria-hidden="true" href="#supported-platforms">#</a></h3>
+<ul>
+<li>Windows</li>
+<li>macOS</li>
+<li>Linux</li>
+</ul>
+<h3 id="dependencies">Dependencies<a hidden class="anchor" aria-hidden="true" href="#dependencies">#</a></h3>
+<ul>
+<li>Flutter framework</li>
+<li>File picker for file selection</li>
+<li>CSV parser for data import</li>
+<li>Excel export functionality</li>
+<li>JSON for data persistence</li>
+</ul>
+<h3 id="performance-considerations">Performance Considerations<a hidden class="anchor" aria-hidden="true" href="#performance-considerations">#</a></h3>
+<ul>
+<li>Large datasets may take time to process</li>
+<li>Filtering is optimized for real-time search</li>
+<li>Export operations may take time for large datasets</li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting<a hidden class="anchor" aria-hidden="true" href="#troubleshooting">#</a></h2>
+<h3 id="application-wont-start">Application Won&rsquo;t Start<a hidden class="anchor" aria-hidden="true" href="#application-wont-start">#</a></h3>
+<ol>
+<li>Check Flutter installation: <code>flutter doctor</code></li>
+<li>Verify dependencies: <code>flutter pub get</code></li>
+<li>Check platform-specific requirements</li>
+</ol>
+<h3 id="import-issues">Import Issues<a hidden class="anchor" aria-hidden="true" href="#import-issues">#</a></h3>
+<ol>
+<li>Verify CSV format matches expected structure</li>
+<li>Check file encoding (UTF-8 recommended)</li>
+<li>Ensure all required columns are present</li>
+</ol>
+<h3 id="performance-issues">Performance Issues<a hidden class="anchor" aria-hidden="true" href="#performance-issues">#</a></h3>
+<ol>
+<li>Close other applications to free memory</li>
+<li>Consider splitting large CSV files</li>
+<li>Use more specific search terms to reduce results</li>
+</ol>
+<h2 id="support">Support<a hidden class="anchor" aria-hidden="true" href="#support">#</a></h2>
+<p>For technical support or feature requests:</p>
+<ol>
+<li>Check the error logs for specific issues</li>
+<li>Review the CSV format requirements</li>
+<li>Contact the development team with specific error messages</li>
+</ol>
+<h2 id="version-history">Version History<a hidden class="anchor" aria-hidden="true" href="#version-history">#</a></h2>
+<ul>
+<li><strong>v1.0</strong>: Initial release with basic electoral register management</li>
+<li><strong>v1.1</strong>: Added duplicate detection and management</li>
+<li><strong>v1.2</strong>: Enhanced search capabilities with AND/OR logic</li>
+<li><strong>v1.3</strong>: Improved error handling and logging</li>
+<li><strong>v1.4</strong>: Added Excel export functionality</li>
+</ul>
+<hr>
+<p><em>This manual covers the current version of LibbyHDC. For the latest updates and features, refer to the project documentation.</em></p>
+<h1 id="libby">Libby<a hidden class="anchor" aria-hidden="true" href="#libby">#</a></h1>
+<p>Welcome to the Libby section. This is a private area accessible only via direct links.</p>
+<h2 id="available-pages">Available Pages<a hidden class="anchor" aria-hidden="true" href="#available-pages">#</a></h2>
+<ul>
+<li><a href="/libby/page1/">Page 1</a> - First private page</li>
+<li><a href="/libby/page2/">Page 2</a> - Second private page</li>
+<li><a href="/libby/page3/">Page 3</a> - Third private page</li>
+<li><a href="/libby/notes/">Notes</a> - Private notes</li>
+<li><a href="/libby/resources/">Resources</a> - Private resources</li>
+</ul>
+<hr>
+<p><em>This section is not listed in the main navigation and is only accessible via direct links.</em></p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Libby - Page 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Page 1 This is the first private page in the Libby section.
+Content You can put any content here that you want to share with specific people via direct links.
+Features Private: Not listed in navigation Accessible: Via direct URL Secure: Only people with the link can find it Example Content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-27 00:00:00 +0000 UTC'>January 27, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Libby - Page 1" href="http://localhost:1313/libby/page1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Libby - Page 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Page 2 This is the second private page in the Libby section.
+Private Information This page can contain any private information you want to share with specific people.
+Use Cases Private documentation Internal notes Draft content Personal resources Confidential information Security Notes Pages are not indexed by search engines Not listed in site navigation Only accessible via direct links Can be password protected at the hosting level if needed ← Back to Libby
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-27 00:00:00 +0000 UTC'>January 27, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Libby - Page 2" href="http://localhost:1313/libby/page2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Libby - Page 3
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Page 3 This is the third private page in the Libby section.
+Additional Features You can customize these pages with any content you need.
+Content Types Text content Images (upload to static/images/) Links to external resources Embedded content Downloadable files Example Structure content/libby/├── _index.md # Main Libby page├── page1.md # Private page 1├── page2.md # Private page 2├── page3.md # Private page 3├── notes.md # Private notes└── resources.md # Private resources URL Structure Main page: https://tatoe.co.uk/libby/ Page 1: https://tatoe.co.uk/libby/page1/ Page 2: https://tatoe.co.uk/libby/page2/ Page 3: https://tatoe.co.uk/libby/page3/ ← Back to Libby
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-27 00:00:00 +0000 UTC'>January 27, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Libby - Page 3" href="http://localhost:1313/libby/page3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Libby - Private Notes
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Private Notes This is a private notes page for your personal use.
+Quick Notes You can use this page to store:
+Meeting notes Ideas and concepts Personal reminders Draft content Private thoughts Formatting Examples Lists Bullet points Numbered lists Nested items Emphasis Bold text and italic text for emphasis.
+Code // Example code block function hello() { console.log(&#34;Hello, Libby!&#34;); } Links Link to external site
+← Back to Libby
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-27 00:00:00 +0000 UTC'>January 27, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Libby - Private Notes" href="http://localhost:1313/libby/notes/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Libby - Private Resources
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Private Resources This page contains private resources and links.
+Useful Links Documentation Hugo Documentation PaperMod Theme Tools Markdown Guide GitHub File Uploads To add files to this section:
+Upload files to static/files/ directory Link to them like this: Download File Images To add images:
+Upload to static/images/ Reference them: External Resources Netlify - Hosting platform GitHub - Code repository ← Back to Libby
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-27 00:00:00 +0000 UTC'>January 27, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Libby - Private Resources" href="http://localhost:1313/libby/resources/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">TATOE - Art Trail Management</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
