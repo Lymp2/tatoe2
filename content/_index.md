@@ -9,27 +9,29 @@ draft: false
 Welcome  **TATOE**, a web application for organising and participating in art trails.
 
 
-
 <h2 class="acronym-highlight">This website is still under development</h2>
 
 # Introduction
 
 The Art Trail is a collaborative event where artists can exhibit their work in garden venues. Some artists with large gardens choose to act as venue hosts, inviting other guest artists to exhibit in their space. Venues can also be commercial locations.
 
-TATOE is a simple tool to manage this invitation process. It’s designed with flexibility in mind — people can change their minds, step back from hosting, or accept new invitations, all without disrupting the flow of the project.
+TATOE is a simple tool to manage this invitation process, minimising many to-and-fro emails. It’s designed with flexibility in mind — people can change their minds, step back from hosting, or accept new invitations, all without disrupting the flow of the project.
 
 ## 🎨 Participating in an Art Trail
+
+You will be either an **admin** (not necessarily exhibiting), or an **artist** who is exhibiting.
 
 Once your trail project has been set up by an **admin** (see below), here’s all you need to do:
 
 ### 🏠 Choose Your Role
+
 - Decide whether you want to be a Venue Lead (to host other artists at your venue). (If you're not a "venue lead" you're an "artist" hoping to be an invited "guest")
 - If you choose to be a **venue lead**, set the number of guest spots (=spaces) you have available.
-  - You can opt out of being a venue lead at any time. If you do opt out, any currently accepted guest artists
-  at your venue will be “released” and visible to other venue leads, who may invite them. You also become "just" an artist yourself, waiting to be invited to another venue. 
+  - You can opt out of being a venue lead at any time. If you do opt out, any currently-accepted guest artists
+  at your venue will be “released” and visible to other venue leads, who can then invite them. You also become "just" an artist yourself, waiting to be invited to another venue. 
   - You’ll see a list of artists looking to be hosted — invite those who ❤️ you.
-  - You can change the number of spots at any time.
-  - You will not be able to invite more guests than the number of spots you set.
+  - You can change the number of your spots at any time.
+  - You will not be able to invite more artists than the number of spots you set.
   - You will set the venue address.
 
 - If you’re an **Artist** (wanting to be a guest):
@@ -37,23 +39,27 @@ Once your trail project has been set up by an **admin** (see below), here’s al
   - Click the ❤️ on any venues you’d like to be invited to. You can click it off again at any time.
     - Venue leads will then see your interest and may send you an invite.
     - You can accept or decline any invitation.
+    - You will not be able to see any venues that are full (all spots have assigned guests).
 
 - If you’re a **Guest** (already accepted a venue spot):
-  - When signed in, you’ll see a only your venue, and the info provided for it.
-  - you can "uninvite" yourself, and become an "artist".
+  - You’ll see a only your venue, and the info provided for it, and latest messages for the venue.
+  - you can "uninvite" yourself, and become an "artist", hoping to be invited to another venue.
 
 ### 🔄 Live Updates & Flexibility
-- Both venue leads and guest artists can change their minds at any time — invite, accept, revoke.
+
+- Venue leads, guests (and artists who can simply unregister) can change their minds at any time — invite, accept, revoke.
 - The project status updates in real time (within seconds), so everyone sees the current state in their browser.
 
 ### 🧭 Final Stages
+
 - Once venues are full or invitations have settled:
   - Venue leads will only see their confirmed guest artists.
-  - Guest artists will only see the venue where they’re accepted/agreed.
+  - Guests will only see the venue where they’re accepted/agreed.
   - Accepted guests become invisible to other venue leads — no double bookings!
+  - Of course, there's a possibility of having a Billy Nomates...
 
-- When the deadline for organizing the event arrives:
-  - The project admin will lock further updates.
+- When the deadline for organising the event arrives:
+  - The project admin will lock updates.
   - Everyone can still log in to view the final setup.
 
 
@@ -98,11 +104,12 @@ Admin also exports data that can be use for input/organising brochures and leafl
 <a href="https://tatoe1.netlify.app" class="custom-button">🎨 Organiser Portal →</a>
 
 <h3 class="acronym-highlight">(B) For the exhibitors/participants</h3>
-**Admin** will give you a **username**, and **password**, and also the **name of the Art Trail** to log in with. First, if you choose to participate in the event, press "register" at the top of your dashboard. If you want to be a **venue lead**, press the button for that, and enter the number of spots you have for other artists (you are a **guest** if you are not a venue lead). Then you can go ahead and start inviting, accepting, declining and revoking!
-bbb
-It's all live - when admin, guest or venue lead makes a change, all users who are logged in will see the change. TATOE is very fluid, people can change their minds at any time - later decide you don't want to be a venue lead, or change the number of guest spots at your venue, and even "unregister" to leave the project. The art trail project gets locked down by admin at the deadline... which he chooses.b
 
-<a href="https://tatoe2.netlify.app" class="custom-button">👥 Participant Portal →</a>
+**Admin** will give you a **username**, and **password**, and also the **name of the Art Trail** to log in with. First, if you choose to participate in the event, press "register" at the top of your dashboard. If you want to be a **venue lead**, press the button for that, and enter the number of spots you have for other artists (you are a **artist/guest** if you are not a venue lead). Then you can go ahead and start inviting, accepting, declining and revoking!
+
+It's all live - when admin, guest or venue lead makes a change, all users who are logged in will see the change within a few seconds. TATOE is very fluid, people can change their minds at any time - later decide you don't want to be a venue lead, or change the number of guest spots at your venue, and even "unregister" to leave the project. The art trail project gets locked down by admin at the deadline... which he chooses.
+
+<a href="https://tatoe2.netlify.app" class="custom-button">👥 Artist Portal →</a>
 
 
 
