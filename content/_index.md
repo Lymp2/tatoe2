@@ -7,7 +7,7 @@ draft: false
 <span class="acronym-highlight">T</span>he <span class="acronym-highlight">A</span>rt <span class="acronym-highlight">T</span>rail <span class="acronym-highlight">O</span>rganiser For <span class="acronym-highlight">E</span>xhibitors
 
 Welcome  **TATOE**, a web application for organising and participating in art trails.
-one
+
 
 
 <h2 class="acronym-highlight">This website is still under development</h2>
@@ -40,7 +40,7 @@ Once your trail project has been set up by an **admin** (see below), here’s al
 ### 🧭 Final Stages
 - Once venues are full or invitations have settled:
   - Venue leads will only see their confirmed guest artists.
-  - Guest artists will only see the venue they’ve been accepted to.
+  - Guest artists will only see the venue where they’re accepted/agreed.
   - Accepted guests become invisible to other venue leads — no double bookings!
 
 - When the deadline for organizing the event arrives:
