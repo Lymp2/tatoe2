@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TATOE - Art Trail Management</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on TATOE - Art Trail Management</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TATOE - the website and bugs</title>
+      <link>http://localhost:1313/blog/website/</link>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/website/</guid>
+      <description>This website. The apps</description>
+    </item>
+    <item>
+      <title>TATOE App Displays</title>
+      <link>http://localhost:1313/displays/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/displays/</guid>
+      <description>&lt;p&gt;OK. These screenshots are terrible. I&amp;rsquo;ll be updating them with good ones ASAP. Work in progress!&lt;/p&gt;
+&lt;p&gt;Here you&amp;rsquo;ll find screenshots and descriptions of the key features and interfaces of both the Organiser Portal and Participant Portal.&lt;/p&gt;
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Organiser Portal Screenshots&lt;/h2&gt;
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;1. Dashboard Overview&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/s1.png&#34; alt=&#34;Organiser Dashboard&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: The main dashboard shows an overview of the art trail with key metrics including total participants, registered users, pending invitations, and venue assignments. Administrators can quickly see the status of their event at a glance.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;2. Participant Management&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/s2.png&#34; alt=&#34;Participant Management&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: This interface allows organisers to view all participants, filter by status (registered, pending, blocked), and perform actions like blocking/unblocking users or sending direct emails.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;3. CSV Import Interface&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/s3.png&#34; alt=&#34;CSV Import&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Simple drag-and-drop interface for importing participant lists from CSV files. The system automatically sends invitation emails to all imported participants.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;4. Venue Lead Overview&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/venue-management.png&#34; alt=&#34;Venue Management&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Shows all venue leads and their capacity, current guest assignments, and pending invitations. Organisers can monitor venue availability and guest distribution.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;5. Export Data Interface&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/data-export.png&#34; alt=&#34;Data Export&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Export current assignments as CSV for printing or sharing with stakeholders. Includes participant details, venue assignments, and contact information.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;6. Email Management&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/email-tools.png&#34; alt=&#34;Email Tools&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Send custom messages to individual participants or bulk emails to all users. Includes template-based messaging for announcements and reminders.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;7. Activity Logs&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/activity-logs.png&#34; alt=&#34;Activity Monitoring&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Complete audit trail showing all system activities, invitation history, acceptances, and changes. Useful for reporting and troubleshooting.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;8. Project Settings&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/project-settings.png&#34; alt=&#34;Project Settings&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Configure art trail details, set event dates, manage administrators, and control system-wide settings.
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Participant Portal Screenshots&lt;/h2&gt;
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;9. Participant Dashboard&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/participant-dashboard.png&#34; alt=&#34;Participant Dashboard&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Clean, intuitive dashboard showing the participant&#39;s current status, venue assignments, and available actions. Users can easily navigate between different sections.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;10. Venue Discovery&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/venue-discovery.png&#34; alt=&#34;Venue Discovery&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Browse available venues with details about each location, capacity, and current guest count. Participants can express interest in venues they&#39;d like to join.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;11. Venue Lead Setup&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/venue-lead-setup.png&#34; alt=&#34;Venue Lead Setup&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Interface for participants who want to become venue leads. Enter venue address, capacity, and manage guest invitations.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;12. Invitation Management&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/invitation-management.png&#34; alt=&#34;Invitation Management&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Venue leads can see interested participants and send invitations. Participants can accept or decline invitations from venue leads.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;13. Profile Management&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/profile-management.png&#34; alt=&#34;Profile Management&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Participants can update their profile information, art details, and preferences. Venue leads can manage their venue information.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;14. Mobile Responsive Design&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/mobile-view.png&#34; alt=&#34;Mobile View&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Both portals are fully responsive and work seamlessly on mobile devices, tablets, and desktop computers.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;15. Real-time Updates&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/real-time-updates.png&#34; alt=&#34;Real-time Status&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Live updates show invitation status changes, new venue assignments, and system notifications without requiring page refreshes.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;16. Search and Filter&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/search-interface.png&#34; alt=&#34;Search Interface&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Powerful search and filter capabilities help users quickly find specific participants, venues, or information within the system.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;17. Notification Center&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/notifications.png&#34; alt=&#34;Notifications&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Centralized notification system showing invitations, status updates, and important announcements from organisers.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;18. Help and Support&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/help-system.png&#34; alt=&#34;Help System&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Built-in help documentation and support tools accessible from any page in the application.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;19. Data Privacy Controls&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/privacy-settings.png&#34; alt=&#34;Privacy Settings&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Participants control their own information and can manage what data is shared with venue leads and other participants.
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;20. System Status&lt;/h3&gt;
+&lt;div class=&#34;display-image-container&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/displays/system-status.png&#34; alt=&#34;System Status&#34; class=&#34;display-image&#34; onclick=&#34;openImageModal(this)&#34;&gt;
+&lt;/div&gt;
+**Description**: Real-time system status indicators showing server health, maintenance schedules, and any current issues.
+&lt;hr&gt;
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Technical Features&lt;/h2&gt;
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;Security &amp; Performance&lt;/h3&gt;
+- **Encrypted Data**: All participant information is encrypted and secure
+- **Fast Loading**: Optimized for quick page loads and smooth interactions
+- **Mobile First**: Designed to work perfectly on all device sizes
+- **Real-time Updates**: Live data synchronization across all users
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;User Experience&lt;/h3&gt;
+- **Intuitive Design**: Clean, modern interface that&#39;s easy to navigate
+- **Accessibility**: WCAG compliant design for users with disabilities
+- **Multi-language Support**: Ready for international art trails
+- **Offline Capability**: Core features work even with poor internet connections
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;These screenshots showcase the current prototype version of TATOE. Features and interfaces may be updated based on user feedback and requirements.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TATOE Launch - Art Trail Management Made Simple</title>
+      <link>http://localhost:1313/blog/tatoe-launch/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/tatoe-launch/</guid>
+      <description>Introducing TATOE, a web application designed to simplify art trail organisation and participation.</description>
+    </item>
+    <item>
+      <title>Organiser Guide - TATOE Art Trail Management</title>
+      <link>http://localhost:1313/manual/owner_admin/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/manual/owner_admin/</guid>
+      <description>&lt;p&gt;Welcome to the TATOE Organiser Portal! This guide will help you manage your art trail effectively using our comprehensive organiser platform.&lt;/p&gt;
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The TATOE Organiser Portal is designed for art trail administrators to manage participants, venues, and invitations across multiple event dates. The system supports up to 100 participants with real-time updates and automated workflows.&lt;/p&gt;
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Getting Started&lt;/h2&gt;
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;Initial Setup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create Your Project&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in with your registered user credentials&lt;/li&gt;
+&lt;li&gt;Set up your art trail project with a unique name&lt;/li&gt;
+&lt;li&gt;Define your event dates (these are fixed and cannot be changed by participants)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Import Participants&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Participant Guide - TATOE Art Trail Participation</title>
+      <link>http://localhost:1313/manual/participant/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/manual/participant/</guid>
+      <description>&lt;p&gt;Welcome to the TATOE Participant Portal! This guide will help you navigate the art trail participation process, from registration to venue assignments.&lt;/p&gt;
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The TATOE Participant Portal allows artists to join art trails, express interest in venues, and manage their participation. The system supports both venue hosting and guest participation with real-time updates.&lt;/p&gt;
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Getting Started&lt;/h2&gt;
+&lt;h3 class=&#34;acronym-highlight&#34;&gt;First-Time Login&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Receive Invitation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check your email for the TATOE invitation&lt;/li&gt;
+&lt;li&gt;Click the setup link provided&lt;/li&gt;
+&lt;li&gt;Create your password and complete registration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Project Login&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

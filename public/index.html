@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.148.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>TATOE - Art Trail Management</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="TATOE - Art Trail Management (Alt + H)">TATOE - Art Trail Management</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/manual/owner_admin/" title="Organizer Guide">
+                    <span>Organizer Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/manual/participant/" title="Participant Guide">
+                    <span>Participant Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/displays/" title="Displays">
+                    <span>Displays</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<div class="post-content"><p><span class="acronym-highlight">T</span>he <span class="acronym-highlight">A</span>rt <span class="acronym-highlight">T</span>rail <span class="acronym-highlight">O</span>rganiser For <span class="acronym-highlight">E</span>xhibitors</p>
+<p>Welcome to <strong>TATOE</strong>, a web application for organising and participating in art trails.</p>
+<h2 class="acronym-highlight">This website is still under development</h2>
+<h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<h2 id="-participating-in-an-art-trail">🎨 Participating in an Art Trail<a hidden class="anchor" aria-hidden="true" href="#-participating-in-an-art-trail">#</a></h2>
+<p>Once your trail project has been set up by an <strong>admin</strong> (see below), here’s all you need to do:</p>
+<h3 id="-choose-your-role">🏠 Choose Your Role<a hidden class="anchor" aria-hidden="true" href="#-choose-your-role">#</a></h3>
+<ul>
+<li>
+<p>Decide whether you want to be a Venue Lead (host other artists at your venue). (If you&rsquo;re not a &ldquo;venue lead&rdquo; you&rsquo;re an artist hoping to be an invited &ldquo;guest&rdquo;)</p>
+</li>
+<li>
+<p>If you choose to be a <strong>venue lead</strong>, set the number of guest spots (=spaces) you have available.</p>
+<ul>
+<li>You can opt out of being a venue lead at any time. If you do opt out, any currently accepted guest artists will be “released” and visible to other venue leads, who may invite them. You also become &ldquo;just&rdquo; an artist yourself, waiting to be invited to another venue.</li>
+<li>You’ll see a list of artists looking to be hosted — invite those who interest you.</li>
+<li>You can change the number of spots at any time.</li>
+<li>You will not be able to invite more guests than the number of spots you set.</li>
+<li>You will set the venue address.</li>
+</ul>
+</li>
+<li>
+<p>If you’re a <strong>Guest Artist</strong> (or want to be one):</p>
+<ul>
+<li>When signed in, you’ll see a list of available venues.</li>
+<li>Click the ❤️ on any venue you’d like to be invited to.
+<ul>
+<li>Venue leads will see your interest and may send you an invite.</li>
+<li>You can accept or decline any invitation.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="-live-updates--flexibility">🔄 Live Updates &amp; Flexibility<a hidden class="anchor" aria-hidden="true" href="#-live-updates--flexibility">#</a></h3>
+<ul>
+<li>Both venue leads and guest artists can change their minds at any time — invite, accept, revoke.</li>
+<li>The project status updates in real time (within seconds), so everyone sees the current state in their browser.</li>
+</ul>
+<h3 id="-final-stages">🧭 Final Stages<a hidden class="anchor" aria-hidden="true" href="#-final-stages">#</a></h3>
+<ul>
+<li>
+<p>Once venues are full or invitations have settled:</p>
+<ul>
+<li>Venue leads will only see their confirmed guest artists.</li>
+<li>Guest artists will only see the venue they’ve been accepted to.</li>
+<li>Accepted guests become invisible to other venue leads — no double bookings!</li>
+</ul>
+</li>
+<li>
+<p>When the deadline for organizing the event arrives:</p>
+<ul>
+<li>The project admin will lock further updates.</li>
+<li>Everyone can still log in to view the final setup.</li>
+</ul>
+</li>
+</ul>
+<h2 id="-for-admins">🔧 For Admins<a hidden class="anchor" aria-hidden="true" href="#-for-admins">#</a></h2>
+<p>Admins have a bird’s-eye view of the entire trail:</p>
+<ul>
+<li>See who’s been invited where, and which artists are still unassigned.</li>
+<li>View a text summary of the current status — perfect for copying into emails.</li>
+<li>Export the full status as an Excel file — useful for creating publicity materials or documentation.</li>
+</ul>
+<h2 id="-privacy">🔧 Privacy<a hidden class="anchor" aria-hidden="true" href="#-privacy">#</a></h2>
+<ul>
+<li>Artists (admin, venue leads and guest artists) do not need an email address to use TATOE.</li>
+<li>Admin sets the Art Trail name, and artist logins. You do not need to use your real name.
+Of course it will be helpful if other users recognise you!</li>
+</ul>
+<hr>
+<h2 class="acronym-highlight">Who I am</h2>
+<p>I&rsquo;m Steve Lympany, and I live in the south east of England. I&rsquo;m a retired engineer and now doing a bit of art. I also write software as a hobby. I don&rsquo;t expect to make tons of dosh from TATOE, but I would like to cover my web hosting costs. There is a Ko-fi button floating around on this page somewhere - &ldquo;buy me a coffee&rdquo;
+(shown as lympany.art - my other website). I hope your donations help cover my hosting/database costs.</p>
+<h2 class="acronym-highlight">Status</h2>
+<p>As of July 2025, TATOE is a prototype developed soley with my own ideas (but with a bit of experience in participating in art trails myself), so I&rsquo;m sure there are plenty of features that could be added. Suggestions welcomed. Hopefully there aren&rsquo;t too many glitches. Please use the <strong>contact form</strong> below. I need some guinea pigs to test it!</p>
+<h2 class="acronym-highlight">What is TATOE?</h2>
+<p>TATOE is a pair of web applications designed for art trail management.</p>
+<h3 class="acronym-highlight">(A) For the organisers (the owner and admins)</h3>
+<p>The <strong>owner</strong> creates the Art Trail project, with nothing more than the name. Then he/she creates an <strong>admin</strong>, with a username and password for the project. There can be more than one admin in an Art Trail. He can remove them admins at any time. The owner can have more than one Art Trail: He can delete them and pause them.</p>
+<p>The <strong>admin</strong> also uses this app. He sets the trail dates, creates all the exhibitor sign-in credentials - easily done from a CSV file (from Excel). The admin can see the status of the art trail - who&rsquo;s going where, who has not been invited, who is registered etc. He can export a detailed summary that could then be emailed to others who are not using TATOE.</p>
+<p>Admin also exports data that can be use for input/organising brochures and leaflets.</p>
+<p><a href="https://tatoe1.netlify.app" class="custom-button">🎨 Organiser Portal →</a></p>
+<h3 class="acronym-highlight">(B) For the exhibitors/participants</h3>
+**Admin** will give you a **username**, and **password**, and also the **name of the Art Trail** to log in with. First, if you choose to participate in the event, press "register" at the top of your dashboard. If you want to be a **venue lead**, press the button for that, and enter the number of spots you have for other artists (you are a **guest** if you are not a venue lead). Then you can go ahead and start inviting, accepting, declining and revoking!
+<p>It&rsquo;s all live - when admin, guest or venue lead makes a change, all users who are logged in will see the change. TATOE is very fluid, people can change their minds at any time - later decide you don&rsquo;t want to be a venue lead, or change the number of guest spots at your venue, and even &ldquo;unregister&rdquo; to leave the project. The art trail project gets locked down by admin at the deadline&hellip; which he chooses.</p>
+<p><a href="https://tatoe2.netlify.app" class="custom-button">👥 Participant Portal →</a></p>
+<h2 class="acronym-highlight">Getting started</h2>
+<p>First, as the potential owner, you will need to contact me for a password. Art Trail <strong>exhibitors and admins do not need a password</strong> from me:; the owner will give a password for the admins, the admins give passwords to the artists exhibiting.</p>
+<iframe src="https://tally.so/embed/nGPxNZ" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Contact TATOE"></iframe>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('lympanyart', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+
+</div>
+
+<article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">TATOE - the website and bugs
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today I first spent a couple of hours tidying up this website. I use Hugo https://gohugo.io/, which is a static website builder (so it doesn’t need to “check to see you’re human”, where you have to check boxes containing zebra crosses for eg). It’s fantastic, it’s quick …and free! But it’s really only for techies. I’ve used only part of its capabilities - I can really say I’m no expert. I’ve just done the minimum.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-03 00:00:00 +0000 UTC'>July 3, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to TATOE - the website and bugs" href="http://localhost:1313/blog/website/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">TATOE Launch - Art Trail Management Made Simple
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’m excited to announce the launch of a protoype of TATOE - The Art Trail Organiser For Exhibitors.
+Why TATOE?As a retired software engineer and artist, I created TATOE to solve the problems I observed in local art trails. Traditional methods often rely on:
+Spreadsheets that become unwieldy Email chains that get lost Manual coordination that’s time-consuming Limited visibility into the overall process TATOE streamlines all of this into an intuitive, web-based system that works on any device.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-27 00:00:00 +0000 UTC'>January 27, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to TATOE Launch - Art Trail Management Made Simple" href="http://localhost:1313/blog/tatoe-launch/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">TATOE - Art Trail Management</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

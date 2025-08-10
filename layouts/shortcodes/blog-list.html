@@ -1,0 +1,27 @@
+{{ $pages := where .Site.RegularPages "Section" "blog" }}
+{{ $pages = where $pages "Draft" false }}
+{{ $pages = sort $pages "Date" "desc" }}
+
+<div class="blog-list">
+    {{ range $pages }}
+    <article class="blog-post-preview">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            {{ if .Params.tags }}
+            <span class="tags">
+                {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </span>
+            {{ end }}
+        </div>
+        {{ if .Params.description }}
+        <p class="post-excerpt">{{ .Params.description }}</p>
+        {{ else }}
+        <p class="post-excerpt">{{ .Summary }}</p>
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="read-more">Read more →</a>
+    </article>
+    {{ end }}
+</div> 

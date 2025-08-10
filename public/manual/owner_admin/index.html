@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Organiser Guide - TATOE Art Trail Management | TATOE - Art Trail Management</title>
+<meta name="keywords" content="">
+<meta name="description" content="Welcome to the TATOE Organiser Portal! This guide will help you manage your art trail effectively using our comprehensive organiser platform.
+Overview
+The TATOE Organiser Portal is designed for art trail administrators to manage participants, venues, and invitations across multiple event dates. The system supports up to 100 participants with real-time updates and automated workflows.
+Getting Started
+Initial Setup
+
+
+Create Your Project
+
+Log in with your registered user credentials
+Set up your art trail project with a unique name
+Define your event dates (these are fixed and cannot be changed by participants)
+
+
+
+Import Participants">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/manual/owner_admin/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/manual/owner_admin/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="TATOE - Art Trail Management (Alt + H)">TATOE - Art Trail Management</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/manual/owner_admin/" title="Organizer Guide">
+                    <span class="active">Organizer Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/manual/participant/" title="Participant Guide">
+                    <span>Participant Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/displays/" title="Displays">
+                    <span>Displays</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Organiser Guide - TATOE Art Trail Management
+    </h1>
+    <div class="post-meta"><span title='2024-01-01 00:00:00 +0000 UTC'>January 1, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Welcome to the TATOE Organiser Portal! This guide will help you manage your art trail effectively using our comprehensive organiser platform.</p>
+<h2 class="acronym-highlight">Overview</h2>
+<p>The TATOE Organiser Portal is designed for art trail administrators to manage participants, venues, and invitations across multiple event dates. The system supports up to 100 participants with real-time updates and automated workflows.</p>
+<h2 class="acronym-highlight">Getting Started</h2>
+<h3 class="acronym-highlight">Initial Setup</h3>
+<ol>
+<li>
+<p><strong>Create Your Project</strong></p>
+<ul>
+<li>Log in with your registered user credentials</li>
+<li>Set up your art trail project with a unique name</li>
+<li>Define your event dates (these are fixed and cannot be changed by participants)</li>
+</ul>
+</li>
+<li>
+<p><strong>Import Participants</strong></p>
+<ul>
+<li>Prepare a CSV file with columns: <code>name,email</code></li>
+<li>Upload the CSV through the admin panel</li>
+<li>The system will automatically send invitation emails to all participants</li>
+</ul>
+</li>
+<li>
+<p><strong>Assign Administrators</strong></p>
+<ul>
+<li>Designate trusted team members as admins</li>
+<li>Admins can view all data and manage participants</li>
+</ul>
+</li>
+</ol>
+<h2 class="acronym-highlight">Admin Panel Features</h2>
+<h3 class="acronym-highlight">User Management</h3>
+<p><strong>View All Users</strong></p>
+<ul>
+<li>See complete list of participants, venue leads, and guests</li>
+<li>Filter by status: registered, pending, blocked</li>
+<li>Search by name or email</li>
+</ul>
+<p><strong>Participant Actions</strong></p>
+<ul>
+<li><strong>Block/Unblock</strong>: Temporarily disable participant access</li>
+<li><strong>Delete</strong>: Permanently remove participants from the system</li>
+<li><strong>Email</strong>: Send direct messages to individual participants</li>
+</ul>
+<h3 class="acronym-highlight">Venue Management</h3>
+<p><strong>Venue Lead Overview</strong></p>
+<ul>
+<li>View all venue leads and their capacity</li>
+<li>Monitor guest assignments and pending invitations</li>
+<li>Track venue status and availability</li>
+</ul>
+<p><strong>Capacity Management</strong></p>
+<ul>
+<li>Monitor how many guest spots each venue has available</li>
+<li>View current assignments and pending requests</li>
+<li>Manage venue lead permissions</li>
+</ul>
+<h3 class="acronym-highlight">Invitation System</h3>
+<p><strong>Real-Time Monitoring</strong></p>
+<ul>
+<li>View all pending invitations</li>
+<li>Track acceptance/decline status</li>
+<li>Monitor invitation flow between venue leads and participants</li>
+</ul>
+<p><strong>Invitation Management</strong></p>
+<ul>
+<li>See which participants have requested to join specific venues</li>
+<li>Monitor venue lead responses</li>
+<li>Track invitation status changes</li>
+</ul>
+<h2 class="acronym-highlight">Key Workflows</h2>
+<h3 class="acronym-highlight">1. Participant Registration Flow</h3>
+<ol>
+<li><strong>CSV Import</strong>: Upload participant list</li>
+<li><strong>Email Invitations</strong>: System sends setup links</li>
+<li><strong>Participant Setup</strong>: Users create passwords and profiles</li>
+<li><strong>Profile Completion</strong>: Participants fill in art details and preferences</li>
+</ol>
+<h3 class="acronym-highlight">2. Venue Lead Setup</h3>
+<ol>
+<li><strong>Opt-in Process</strong>: Participants can become venue leads</li>
+<li><strong>Venue Details</strong>: Leads provide address and guest capacity</li>
+<li><strong>Capacity Management</strong>: System tracks available spots</li>
+<li><strong>Guest Management</strong>: Leads can invite and manage guests</li>
+</ol>
+<h3 class="acronym-highlight">3. Invitation Workflow</h3>
+<ol>
+<li><strong>Interest Expression</strong>: Participants request to join venues</li>
+<li><strong>Venue Lead Review</strong>: Leads see interested participants</li>
+<li><strong>Invitation Sent</strong>: Lead invites specific participants</li>
+<li><strong>Response Handling</strong>: Participants accept or decline</li>
+<li><strong>Assignment Confirmation</strong>: System updates assignments</li>
+</ol>
+<h2 class="acronym-highlight">Data Export Features</h2>
+<h3 class="acronym-highlight">Export Current Plan</h3>
+- Download CSV with all current assignments
+- Includes participant details, venue assignments, and contact information
+- Perfect for printing or sharing with stakeholders
+<h3 class="acronym-highlight">Export Activity Logs</h3>
+- Complete audit trail of all system activities
+- Track invitation history, acceptances, and changes
+- Useful for reporting and analysis
+<h2 class="acronym-highlight">Email Management</h2>
+<h3 class="acronym-highlight">Automated Emails</h3>
+- **Welcome Emails**: Sent to new participants
+- **Reminder Emails**: Automated reminders for incomplete registrations
+- **Status Updates**: Notifications for invitation changes
+<h3 class="acronym-highlight">Manual Email Tools</h3>
+- Send custom messages to individual participants
+- Bulk email capabilities for announcements
+- Template-based messaging system
+<h2 class="acronym-highlight">Best Practices</h2>
+<h3 class="acronym-highlight">Before the Event</h3>
+1. **Early Setup**: Import participants well in advance
+2. **Clear Communication**: Send welcome emails with clear instructions
+3. **Capacity Planning**: Monitor venue lead registrations
+4. **Testing**: Verify all email systems work correctly
+<h3 class="acronym-highlight">During the Event</h3>
+1. **Monitor Activity**: Check real-time updates
+2. **Handle Issues**: Quickly resolve any participant problems
+3. **Export Data**: Keep regular backups of current assignments
+4. **Communication**: Send timely updates to participants
+<h3 class="acronym-highlight">After the Event</h3>
+1. **Export Final Data**: Download complete assignment records
+2. **Archive Information**: Save activity logs for future reference
+3. **Gather Feedback**: Use the system to collect participant feedback
+<h2 class="acronym-highlight">Troubleshooting</h2>
+<h3 class="acronym-highlight">Common Issues</h3>
+<p><strong>Participant Can&rsquo;t Log In</strong></p>
+<ul>
+<li>Verify email address is correct in the system</li>
+<li>Check if participant has completed initial setup</li>
+<li>Ensure account is not blocked</li>
+</ul>
+<p><strong>Invitation Problems</strong></p>
+<ul>
+<li>Check if venue has available capacity</li>
+<li>Verify participant hasn&rsquo;t already been invited elsewhere</li>
+<li>Ensure venue lead has completed setup</li>
+</ul>
+<p><strong>Email Delivery Issues</strong></p>
+<ul>
+<li>Check spam folders</li>
+<li>Verify email addresses are correctly formatted</li>
+<li>Use manual email tools as backup</li>
+</ul>
+<h3 class="acronym-highlight">Support Contacts</h3>
+<p>For technical issues or questions about the organiser portal:</p>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:support@tatoe.co.uk">support@tatoe.co.uk</a></li>
+<li><strong>Response Time</strong>: Within 24 hours</li>
+<li><strong>Emergency</strong>: Contact your system administrator</li>
+</ul>
+<h2 class="acronym-highlight">Security Features</h2>
+<h3 class="acronym-highlight">Data Protection</h3>
+- All participant data is encrypted
+- Access is restricted to authorized administrators
+- Regular security updates and monitoring
+<h3 class="acronym-highlight">User Privacy</h3>
+- Participants control their own information
+- Venue addresses are only shared with assigned guests
+- Email addresses are protected from unauthorized access
+<hr>
+<h2 class="acronym-highlight">Contact Support2</h2>
+<hr>
+<p><em>Need help? Check our <a href="/manual/troubleshooting/">troubleshooting guide</a> or contact support.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">TATOE - Art Trail Management</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
