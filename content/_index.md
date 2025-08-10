@@ -6,7 +6,7 @@ draft: false
 
 <span class="acronym-highlight">T</span>he <span class="acronym-highlight">A</span>rt <span class="acronym-highlight">T</span>rail <span class="acronym-highlight">O</span>rganiser For <span class="acronym-highlight">E</span>xhibitors
 
-Welcome to **TATOE**, a web application for organising and participating in art trails.
+Welcome  **TATOE**, a web application for organising and participating in art trails.
 one
 
 
