@@ -14,24 +14,33 @@ Welcome  **TATOE**, a web application for organising and participating in art tr
 
 # Introduction
 
+The Art Trail is a collaborative event where artists can exhibit their work in garden venues. Some artists with large gardens choose to act as venue hosts, inviting other guest artists to exhibit in their space. Venues can also be commercial locations.
+
+TATOE is a simple tool to manage this invitation process. It’s designed with flexibility in mind — people can change their minds, step back from hosting, or accept new invitations, all without disrupting the flow of the project.
+
 ## 🎨 Participating in an Art Trail
 
 Once your trail project has been set up by an **admin** (see below), here’s all you need to do:
 
 ### 🏠 Choose Your Role
-- Decide whether you want to be a Venue Lead (host other artists at your venue). (If you're not a "venue lead" you're an artist hoping to be an invited "guest")
+- Decide whether you want to be a Venue Lead (to host other artists at your venue). (If you're not a "venue lead" you're an "artist" hoping to be an invited "guest")
 - If you choose to be a **venue lead**, set the number of guest spots (=spaces) you have available.
-  - You can opt out of being a venue lead at any time. If you do opt out, any currently accepted guest artists will be “released” and visible to other venue leads, who may invite them. You also become "just" an artist yourself, waiting to be invited to another venue. 
-  - You’ll see a list of artists looking to be hosted — invite those who interest you.
+  - You can opt out of being a venue lead at any time. If you do opt out, any currently accepted guest artists
+  at your venue will be “released” and visible to other venue leads, who may invite them. You also become "just" an artist yourself, waiting to be invited to another venue. 
+  - You’ll see a list of artists looking to be hosted — invite those who ❤️ you.
   - You can change the number of spots at any time.
   - You will not be able to invite more guests than the number of spots you set.
   - You will set the venue address.
 
-- If you’re a **Guest Artist** (or want to be one):
+- If you’re an **Artist** (wanting to be a guest):
   - When signed in, you’ll see a list of available venues.
-  - Click the ❤️ on any venue you’d like to be invited to.
-    - Venue leads will see your interest and may send you an invite.
+  - Click the ❤️ on any venues you’d like to be invited to. You can click it off again at any time.
+    - Venue leads will then see your interest and may send you an invite.
     - You can accept or decline any invitation.
+
+- If you’re a **Guest** (already accepted a venue spot):
+  - When signed in, you’ll see a only your venue, and the info provided for it.
+  - you can "uninvite" yourself, and become an "artist".
 
 ### 🔄 Live Updates & Flexibility
 - Both venue leads and guest artists can change their minds at any time — invite, accept, revoke.
