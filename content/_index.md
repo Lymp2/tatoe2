@@ -91,7 +91,7 @@ Admin also exports data that can be use for input/organising brochures and leafl
 <h3 class="acronym-highlight">(B) For the exhibitors/participants</h3>
 **Admin** will give you a **username**, and **password**, and also the **name of the Art Trail** to log in with. First, if you choose to participate in the event, press "register" at the top of your dashboard. If you want to be a **venue lead**, press the button for that, and enter the number of spots you have for other artists (you are a **guest** if you are not a venue lead). Then you can go ahead and start inviting, accepting, declining and revoking!
 
-It's all live - when admin, guest or venue lead makes a change, all users who are logged in will see the change. TATOE is very fluid, people can change their minds at any time - later decide you don't want to be a venue lead, or change the number of guest spots at your venue, and even "unregister" to leave the project. The art trail project gets locked down by admin at the deadline... which he chooses.
+It's all live - when admin, guest or venue lead makes a change, all users who are logged in will see the change. TATOE is very fluid, people can change their minds at any time - later decide you don't want to be a venue lead, or change the number of guest spots at your venue, and even "unregister" to leave the project. The art trail project gets locked down by admin at the deadline... which he chooses.b
 
 <a href="https://tatoe2.netlify.app" class="custom-button">👥 Participant Portal →</a>
 
