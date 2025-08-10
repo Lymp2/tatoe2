@@ -1,6 +1,6 @@
 ---
 title: "TATOE - Art Trail Management"
-date: 2025-01-27
+date: 2025-05-27
 draft: false
 ---
 
