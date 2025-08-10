@@ -1,8 +1,52 @@
 /* Custom styles for TATOE main page */
 
-/* Main heading color */
+/* Global font size adjustments - make text smaller throughout */
+body {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+}
+
 h1 {
+    font-size: 1.8rem !important;
     color: #2C3E50 !important;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+}
+
+h3 {
+    font-size: 1.3rem !important;
+}
+
+h4 {
+    font-size: 1.1rem !important;
+}
+
+h5 {
+    font-size: 1rem !important;
+}
+
+h6 {
+    font-size: 0.9rem !important;
+}
+
+p {
+    font-size: 0.9rem !important;
+}
+
+li {
+    font-size: 0.9rem !important;
+}
+
+/* Adjust navigation and menu items */
+nav, .menu {
+    font-size: 0.85rem !important;
+}
+
+/* Adjust button text */
+.custom-button {
+    font-size: 0.85rem !important;
 }
 
 .custom-button {
