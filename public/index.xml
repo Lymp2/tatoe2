@@ -4,7 +4,7 @@
     <title>TATOE - Art Trail Management</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on TATOE - Art Trail Management</description>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -147,26 +147,16 @@
       <description>Introducing TATOE, a web application designed to simplify art trail organisation and participation.</description>
     </item>
     <item>
-      <title>Organiser Guide - TATOE Art Trail Management</title>
+      <title>Owner Guide - TATOE Art Trail Management</title>
       <link>http://localhost:1313/manual/owner_admin/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/manual/owner_admin/</guid>
-      <description>&lt;p&gt;Welcome to the TATOE Organiser Portal! This guide will help you manage your art trail effectively using our comprehensive organiser platform.&lt;/p&gt;
-&lt;h2 class=&#34;acronym-highlight&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;The TATOE Organiser Portal is designed for art trail administrators to manage participants, venues, and invitations across multiple event dates. The system supports up to 100 participants with real-time updates and automated workflows.&lt;/p&gt;
-&lt;h2 class=&#34;acronym-highlight&#34;&gt;Getting Started&lt;/h2&gt;
-&lt;h3 class=&#34;acronym-highlight&#34;&gt;Initial Setup&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Create Your Project&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Log in with your registered user credentials&lt;/li&gt;
-&lt;li&gt;Set up your art trail project with a unique name&lt;/li&gt;
-&lt;li&gt;Define your event dates (these are fixed and cannot be changed by participants)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Import Participants&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Welcome to the TATOE Owner Help page!&lt;/p&gt;
+&lt;h2 class=&#34;acronym-highlight&#34;&gt;Onwer Overview&lt;/h2&gt;
+&lt;p&gt;As a TATOE Owner you will contact me for TATOE signing in. You provide me with your email address, which will be used for you to sign in, and I will send you your unique password.&lt;/p&gt;
+&lt;p&gt;1 - sign in (after selecting the &amp;ldquo;owner&amp;rdquo; button).
+2 - create one or more &lt;strong&gt;admin&lt;/strong&gt; users.
+3 - give each a login name and password. Let them know (eg email them). You can also give them their real name. You can change these at any time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Participant Guide - TATOE Art Trail Participation</title>

@@ -8,14 +8,17 @@ draft: false
 
 Welcome  **TATOE**, a web application for organising and participating in art trails.
 
+<h2 class="acronym-highlight">It's Free! (buy me a coffee or 2)</h2>
 
-<h2 class="acronym-highlight">This website is still under development</h2>
+**This website is still under development**
 
 # Introduction
 
-The Art Trail is a collaborative event where artists can exhibit their work in garden venues. Some artists with large gardens choose to act as venue hosts, inviting other guest artists to exhibit in their space. Venues can also be commercial locations.
+An Art Trail is a collaborative event where artists can exhibit their work in garden and other venues. Some artists with large gardens choose to act as venue hosts, inviting other guest artists to exhibit in their space. Venues can also be commercial locations.
 
-TATOE is a simple tool to manage this invitation process, minimising many to-and-fro emails. It’s designed with flexibility in mind — people can change their minds, step back from hosting, or accept new invitations, all without disrupting the flow of the project.
+TATOE is a tool to manage this invitation process, minimising many to-and-fro messaging. It’s designed with flexibility in mind — people can change their minds, step back from hosting, or accept new invitations. Users will see (on their phone or PC etc) the state of invitations live, as other users make or change their decisions. The overall state of the Art Trail project is visible to the **admins**.
+
+If you choose to, a webpage is also updated for the public to see up-to-the-minute state of venues and artists. TATOE can also export a CSV to give to e.g. a graphic designer for publishing leaflets of your event.
 
 ## 🎨 Participating in an Art Trail
 
@@ -25,57 +28,82 @@ Once your trail project has been set up by an **admin** (see below), here’s al
 
 ### 🏠 Choose Your Role
 
-- Decide whether you want to be a Venue Lead (to host other artists at your venue). (If you're not a "venue lead" you're an "artist" hoping to be an invited "guest")
-- If you choose to be a **venue lead**, set the number of guest spots (=spaces) you have available.
-  - You can opt out of being a venue lead at any time. If you do opt out, any currently-accepted guest artists
-  at your venue will be “released” and visible to other venue leads, who can then invite them. You also become "just" an artist yourself, waiting to be invited to another venue. 
-  - You’ll see a list of artists looking to be hosted — invite those who ❤️ you.
+- First, decide whether you want to participate! (someone may have created a username for you in TATOE. You can just ignore any invitations).
+- Decide whether you want to be a **Venue Lead** (VL - to host other artists at your venue). 
+- If you're not a VL you're an **artist** hoping to be an invited to a venue and become a **guest**.
+- If you choose to be a VL, you set the number of guest **spots** (=spaces for guests) you have available at your venue.
+  - You’ll see a list of artists looking to be a guest somewhere - invite those who ❤️ you.
   - You can change the number of your spots at any time.
   - You will not be able to invite more artists than the number of spots you set.
-  - You will set the venue address.
+  - You will set the **venue address**.
+  - You will set your **opening dates** and times for each date.
+  - You can opt out of being a VL at any time. You would become an **artist**. If you do opt out, any currently-accepted guests at your venue will be “released” to also become [uninvited] **artists**, and so visible to other VLs, who can then invite them (and you) to their venue. 
 
-- If you’re an **Artist** (wanting to be a guest):
-  - When signed in, you’ll see a list of available venues.
+
+- If you’re an **artist** (wanting to be a guest):
+  - When signed in to TATOE, you’ll see a list of available venues which have available spots.
   - Click the ❤️ on any venues you’d like to be invited to. You can click it off again at any time.
-    - Venue leads will then see your interest and may send you an invite.
+    - VLs will see your interest and may send you an invite.
     - You can accept or decline any invitation.
-    - You will not be able to see any venues that are full (all spots have assigned guests).
+    - You will not be able to see any venues that are full (all spots have been assigned).
 
-- If you’re a **Guest** (already accepted a venue spot):
-  - You’ll see a only your venue, and the info provided for it, and latest messages for the venue.
-  - you can "uninvite" yourself, and become an "artist", hoping to be invited to another venue.
+- If you’re a **guest** (already accepted a venue):
+  - You’ll see a only your venue, and the info provided for it, and any messages about the venue.
+  - you can uninvite yourself, and become an **artist**, hoping to be invited to another venue.
 
 ### 🔄 Live Updates & Flexibility
 
-- Venue leads, guests (and artists who can simply unregister) can change their minds at any time — invite, accept, revoke.
+- VLs, guests and artists can change their minds at any time - invite, accept, revoke, unregister.
 - The project status updates in real time (within seconds), so everyone sees the current state in their browser.
 
 ### 🧭 Final Stages
 
 - Once venues are full or invitations have settled:
-  - Venue leads will only see their confirmed guest artists.
+  - VLs will only see their confirmed guest artists.
   - Guests will only see the venue where they’re accepted/agreed.
-  - Accepted guests become invisible to other venue leads — no double bookings!
+  - Guests become invisible to other VLs - no double bookings!
   - Of course, there's a possibility of having a Billy Nomates...
 
 - When the deadline for organising the event arrives:
-  - The project admin will lock updates.
-  - Everyone can still log in to view the final setup.
+  - The **admin** will pause updates.
+  - The admin may export a csv file of the trail.
+  - The admin may create a webpage of the project for the public.
+  - Everyone can still log in to view the final setup, and also view the public webpage.
 
+- **Last minute changes**:
+  - If someone suddenly cannot do the the trail, **admin** may unpause the project to allow changes. eg if a VL is unable to host, the venue can be closed, its guests released to be artists, and other VLs may be able to invite them, just using TATOE as normal. A "closing date" is only used in order for printed publications to be made. In essence, there is no restriction on having changes even after your Art Trail has started. You will be able to update the public webpage "live" to show the latest venue info. 
 
 ## 🔧 For Admins
 
 Admins have a bird’s-eye view of the entire trail:
 
-- See who’s been invited where, and which artists are still unassigned.
-- View a text summary of the current status — perfect for copying into emails.
-- Export the full status as an Excel file — useful for creating publicity materials or documentation.
+- See who’s been invited where, and which artists are still unassigned/uninvited.
+- View a text summary of the current status - perfect for copying into emails.
+- Export the full status as an Excel file - useful for creating publicity materials or documentation.
+- View detailed histories of invitations and changes to the project.
+
+## 🔧 Art Trail Data
+
+- The **owner** creates and manages the **admin** users.
+- Admins create the Art Trail projects, set the opening dates, and import a list of potential artists.
+- The Art Trail can have **any number of dates**, and these may be non-contiguous.
+- A VL may choose not to be open on particluar dates (guests and artists will see the availability of the venue).
+- The VL can set the **opening times** for each date.  
+
+## 🔧 Limitations
+
+I need to see how much hosting etc. will cost me. So currently...
+
+- only one project is allowed per owner.
+- a maximum of 20 Venues.
+- a maximum of 60 artists.
+
+But please email me if you need an "adjustment".
 
 ## 🔧 Privacy
 
-- Artists (admin, venue leads and guest artists) do not need an email address to use TATOE.
-- Admin sets the Art Trail name, and artist logins. You do not need to use your real name. 
-Of course it will be helpful if other users recognise you! 
+- Users - admin, VL, artists and guests - **do not need an email address** to use TATOE. Only the **owner** needs a valid email for registering. 
+- Artists and admins do not need to use their real name. Of course it will be helpful if other users can recognise them somehow (e.g. by initials).
 
 
 ---
@@ -83,7 +111,7 @@ Of course it will be helpful if other users recognise you!
 <h2 class="acronym-highlight">Who I am</h2>
 
 I'm Steve Lympany, and I live in the south east of England. I'm a retired engineer and now doing a bit of art. I also write software as a hobby. I don't expect to make tons of dosh from TATOE, but I would like to cover my web hosting costs. There is a Ko-fi button floating around on this page somewhere - "buy me a coffee" 
-(shown as lympany.art - my other website). I hope your donations help cover my hosting/database costs.
+(shown as **lympany.art** - my other website). I hope your donations help cover my hosting/database costs, in order to avoid licensing and charging for TATOE use.
 
 <h2 class="acronym-highlight">Status</h2>
 
@@ -91,31 +119,15 @@ As of July 2025, TATOE is a prototype developed soley with my own ideas (but wit
 
 <h2 class="acronym-highlight">What is TATOE?</h2>
 
-TATOE is a pair of web applications designed for art trail management. 
+TATOE is a web app designed for Art Trail management. 
 
-<h3 class="acronym-highlight">(A) For the organisers (the owner and admins)</h3>
 
-The **owner** creates the Art Trail project, with nothing more than the name. Then he/she creates an **admin**, with a username and password for the project. There can be more than one admin in an Art Trail. He can remove them admins at any time. The owner can have more than one Art Trail: He can delete them and pause them.
-
-The **admin** also uses this app. He sets the trail dates, creates all the exhibitor sign-in credentials - easily done from a CSV file (from Excel). The admin can see the status of the art trail - who's going where, who has not been invited, who is registered etc. He can export a detailed summary that could then be emailed to others who are not using TATOE.
-
-Admin also exports data that can be use for input/organising brochures and leaflets.
-
-<a href="https://tatoe1.netlify.app" class="custom-button">🎨 Organiser Portal →</a>
-
-<h3 class="acronym-highlight">(B) For the exhibitors/participants</h3>
-
-**Admin** will give you a **username**, and **password**, and also the **name of the Art Trail** to log in with. First, if you choose to participate in the event, press "register" at the top of your dashboard. If you want to be a **venue lead**, press the button for that, and enter the number of spots you have for other artists (you are a **artist/guest** if you are not a venue lead). Then you can go ahead and start inviting, accepting, declining and revoking!
-
-It's all live - when admin, guest or venue lead makes a change, all users who are logged in will see the change within a few seconds. TATOE is very fluid, people can change their minds at any time - later decide you don't want to be a venue lead, or change the number of guest spots at your venue, and even "unregister" to leave the project. The art trail project gets locked down by admin at the deadline... which he chooses.
-
-<a href="https://tatoe2.netlify.app" class="custom-button">👥 Artist Portal →</a>
-
+<a href="https://tatoe1.netlify.app" class="custom-button">🎨 TATOE WEB APP →</a>
 
 
 <h2 class="acronym-highlight">Getting started</h2>
 
-First, as the potential owner, you will need to contact me for a password. Art Trail **exhibitors and admins do not need a password** from me:; the owner will give a password for the admins, the admins give passwords to the artists exhibiting.
+First, to become an **owner**, you will need to contact me for a password. Art Trail **exhibitors and admins do not need a password** from me: the owner will give a password for the admins, the admins give passwords to the artists exhibiting.
 
 <iframe src="https://tally.so/embed/nGPxNZ" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Contact TATOE"></iframe>
 

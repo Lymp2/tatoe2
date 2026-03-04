@@ -1,16 +1,22 @@
 ---
-title: "Organiser Guide - TATOE Art Trail Management"
+title: "Owner Guide - TATOE Art Trail Management"
 date: 2024-01-01
 draft: false
 ---
 
-Welcome to the TATOE Organiser Portal! This guide will help you manage your art trail effectively using our comprehensive organiser platform.
+Welcome to the TATOE Owner Help page!
 
-<h2 class="acronym-highlight">Overview</h2>
+<h2 class="acronym-highlight">Onwer Overview</h2>
 
-The TATOE Organiser Portal is designed for art trail administrators to manage participants, venues, and invitations across multiple event dates. The system supports up to 100 participants with real-time updates and automated workflows.
+As a TATOE Owner you will contact me for TATOE signing in. You provide me with your email address, which will be used for you to sign in, and I will send you your unique password.
 
-<h2 class="acronym-highlight">Getting Started</h2>
+1 - sign in (after selecting the "owner" button).
+2 - create one or more **admin** users. 
+3 - give each a login name and password. Let them know (eg email them). You can also give them their real name. You can change these at any time.
+
+You will be able to see overviews of the Art Trail projects, and you will be able to delete projects. You will not be able to do much in the way of project management.
+
+<h2 class="acronym-highlight">Admin Overview</h2>
 
 <h3 class="acronym-highlight">Initial Setup</h3>
 

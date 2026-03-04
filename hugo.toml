@@ -17,7 +17,7 @@ theme = 'PaperMod'
 
   [[menu.main]]
     identifier = "organizer-guide"
-    name = "Organizer Guide"
+    name = "Organiser Guide"
     url = "/manual/owner_admin/"
     weight = 2
   [[menu.main]]
