@@ -4,21 +4,24 @@ date: 2025-05-27
 draft: false
 ---
 
-<span class="acronym-highlight">T</span>he <span class="acronym-highlight">A</span>rt <span class="acronym-highlight">T</span>rail <span class="acronym-highlight">O</span>rganiser For <span class="acronym-highlight">E</span>xhibitors
+<span class="acronym-highlight">T</span>he <span class="acronym-highlight">A</span>rt <span class="acronym-highlight">T</span>rail <span class="acronym-highlight">O</span>rganiser For <span class="acronym-highlight">E</span>xhibitors  
 
 Welcome  **TATOE**, a web application for organising and participating in art trails.
 
-<h2 class="acronym-highlight">It's Free! (buy me a coffee or 2)</h2>
 
-**This website is still under development**
+It's Free! (buy me a coffee...) 
+
+<a href="#Contact">Contact me..</a>
+
+**Website is still under development**
 
 # Introduction
 
-An Art Trail is a collaborative event where artists can exhibit their work in garden and other venues. Some artists with large gardens choose to act as venue hosts, inviting other guest artists to exhibit in their space. Venues can also be commercial locations.
+An Art Trail is a collaborative event where artists can exhibit their work in a garden and other venues. Some artists with large gardens choose to act as venue hosts, inviting other guest artists to exhibit in their space. Venues can also be commercial locations.
 
-TATOE is a tool to manage this invitation process, minimising many to-and-fro messaging. It’s designed with flexibility in mind — people can change their minds, step back from hosting, or accept new invitations. Users will see (on their phone or PC etc) the state of invitations live, as other users make or change their decisions. The overall state of the Art Trail project is visible to the **admins**.
+TATOE is a tool to manage this invitation process, minimising much to-and-fro messaging. It’s designed for flexibility; people can change their minds, step back from hosting, or accept new invitations. Users will see (on their phone or PC etc) the state of invitations **live**, as other users make or change their decisions. The overall state of the Art Trail project is visible to the **admins**.
 
-If you choose to, a webpage is also updated for the public to see up-to-the-minute state of venues and artists. TATOE can also export a CSV to give to e.g. a graphic designer for publishing leaflets of your event.
+If **admins** choose to, a webpage can be created for the public to see up-to-the-minute state of venues and artists. TATOE can also export a CSV to give to e.g. a graphic designer for publishing leaflets of your event.
 
 ## 🎨 Participating in an Art Trail
 
@@ -28,10 +31,11 @@ Once your trail project has been set up by an **admin** (see below), here’s al
 
 ### 🏠 Choose Your Role
 
-- First, decide whether you want to participate! (someone may have created a username for you in TATOE. You can just ignore any invitations).
-- Decide whether you want to be a **Venue Lead** (VL - to host other artists at your venue). 
-- If you're not a VL you're an **artist** hoping to be an invited to a venue and become a **guest**.
-- If you choose to be a VL, you set the number of guest **spots** (=spaces for guests) you have available at your venue.
+1. First, decide whether you want to participate! (admin can create several 
+usernames, but there is no obligation to sign up).
+2. Decide whether you want to be a **Venue Lead** (VL - to host other artists at your venue). 
+3. If you're not a VL you're an **artist** hoping to be an invited to a venue and become a **guest**.
+4. If you choose to be a VL, you set the number of guest **spots** (=spaces for guests) you have available at your venue.
   - You’ll see a list of artists looking to be a guest somewhere - invite those who ❤️ you.
   - You can change the number of your spots at any time.
   - You will not be able to invite more artists than the number of spots you set.
@@ -128,7 +132,7 @@ TATOE is a web app designed for Art Trail management.
 <h2 class="acronym-highlight">Getting started</h2>
 
 First, to become an **owner**, you will need to contact me for a password. Art Trail **exhibitors and admins do not need a password** from me: the owner will give a password for the admins, the admins give passwords to the artists exhibiting.
-
+# Contact
 <iframe src="https://tally.so/embed/nGPxNZ" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Contact TATOE"></iframe>
 
 
